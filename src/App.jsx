@@ -8,7 +8,7 @@ function App() {
 
   async function getPorras (){
 
-    const ruta = "http://localhost:3000/api/porras"
+    const ruta = "https://porrasapi-fb9h.onrender.com/api/porras"
     const porrasJson = await fetch(ruta)
     const porras = await porrasJson.json()
     setPorras(porras)
